@@ -1,4 +1,5 @@
-🚀 GDSC task deliverable: Developing the initial three app screens - Splash, Login, and Sign In 
+🚀 GDSC task deliverable: Developing the initial three app screens - Splash, Login, and Sign In .
+
 Splash Screen:
 A mesmerizing entry point, setting the tone for an exciting experience.
 
