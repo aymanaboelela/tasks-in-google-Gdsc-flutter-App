@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const  MaterialApp(debugShowCheckedModeBanner: false, 
-    home:   SplachScreen(),
-        
-
-        );
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplachScreen(),
+    );
   }
 }
+//Create the first 3 UI screens!
