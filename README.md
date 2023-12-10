@@ -9,6 +9,6 @@ Smooth, secure, and user-friendly authentication awaits.
 Sign In Screen:
 Effortless registration, welcoming users to explore our app's offerings.
 
-Check out the design vibe [here](https://www.figma.com/file/FRBqEYcP0VBKSEHp0LCb22/DayTask---Task-Management-App-UI-Kit-(Community)?node-id=7%3A13&mode=dev) for a visual treat! 🎨✨
+Check out the design in figma [here](https://www.figma.com/file/FRBqEYcP0VBKSEHp0LCb22/DayTask---Task-Management-App-UI-Kit-(Community)?node-id=7%3A13&mode=dev) for a visual treat! 🎨✨
 
 
