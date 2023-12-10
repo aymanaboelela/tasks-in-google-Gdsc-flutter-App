@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'view/singin_screen.dart';
 import 'view/widgets/splach_view.dart';
 
 void main() {
@@ -12,11 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home:SingInScreen()
-      //  SplachScreen(),
+    return  const  MaterialApp(debugShowCheckedModeBanner: false, 
+    home:   SplachScreen(),
+        
 
-    );
+        );
   }
 }

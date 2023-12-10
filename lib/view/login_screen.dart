@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'package:mangment_app/core/const.dart';
 import 'package:mangment_app/core/responsive.dart';
 import 'package:mangment_app/view/widgets/custom_button.dart';
 import 'package:mangment_app/view/widgets/custom_text_field.dart';
 
+import 'home_screen.dart';
 import 'sing_up.dart';
 import 'widgets/custom_outline_button.dart';
 
-class SingInScreen extends StatelessWidget {
-  SingInScreen({super.key});
+class LogInScreen extends StatelessWidget {
+  LogInScreen({super.key});
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
   String? email;
   String? password;
@@ -35,14 +36,12 @@ class SingInScreen extends StatelessWidget {
                   ),
                 ),
                 const SizeVertical(value: 3),
-                Text(
+                const Text(
                   "Welcome Back!",
-                  style: GoogleFonts.roboto(
-                    textStyle: const TextStyle(
-                      fontSize: 26,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white,
-                    ),
+                  style: TextStyle(
+                    fontSize: 26,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.white,
                   ),
                 ),
                 CustomTextFormField(
@@ -64,27 +63,19 @@ class SingInScreen extends StatelessWidget {
                   isVisible: true,
                   title: "Password",
                   fillColor: const Color(0xFF8CAAB8),
-                  cursorColor:const  Color(0xFF8CAAB8),
+                  cursorColor: const Color(0xFF8CAAB8),
                 ),
                 GestureDetector(
-                  onTap: () {
-                    if (formKey.currentState!.validate()) {
-                      formKey.currentState!.save();
-    
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => SingUP()),);
-                    }
-                  },
+                  onTap: () {},
                   child: Container(
                     padding: const EdgeInsets.only(top: 11),
                     alignment: Alignment.centerRight,
-                    child: Text(
+                    child: const Text(
                       "Forgot Password?",
-                      style: GoogleFonts.roboto(
-                        textStyle: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                          color: Color(0xFF8CAAB8),
-                        ),
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xFF8CAAB8),
                       ),
                     ),
                   ),
@@ -93,7 +84,17 @@ class SingInScreen extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 38),
                     child: CustomButton(
                       name: "Log in",
-                      onTap: () {},
+                      onTap: () {
+                        if (formKey.currentState!.validate()) {
+                          formKey.currentState!.save();
+
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomeScreen()),
+                          );
+                        }
+                      },
                     )),
                 const Padding(
                   padding: EdgeInsets.only(top: 37),
@@ -136,25 +137,27 @@ class SingInScreen extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Don’t have an account?",
-                          style: GoogleFonts.roboto(
-                              textStyle: const TextStyle(
-                            color: Color(0xff8CAAB9),
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                          ))),
+                      const Text(
+                        "Don’t have an account?",
+                        style: TextStyle(
+                          color: Color(0xff8CAAB9),
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
                       GestureDetector(
                         onTap: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => SingUP()),);
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Singin()),
+                          );
                         },
-                        child: Text(
+                        child: const Text(
                           " Sign Up",
-                          style: GoogleFonts.roboto(
-                            textStyle: const TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: Color(0xFFFED36A),
-                            ),
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xFFFED36A),
                           ),
                         ),
                       ),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 import '../../core/const.dart';
 import '../../core/responsive.dart';
-import '../singin_screen.dart';
+import '../login_screen.dart';
 import 'custom_button.dart';
 
 class SplachScreen extends StatelessWidget {
@@ -35,36 +35,34 @@ class SplachScreen extends StatelessWidget {
                   children: [
                     TextSpan(
                       text: 'Manage\nyour\nTasks With ',
-                      style: GoogleFonts.poppins(
-                        textStyle: const TextStyle(
+                      style: const TextStyle(
                           color: Colors.white,
                           fontSize: 61,
                           fontWeight: FontWeight.w600,
                           height: 1.0,
                         ),
-                      ),
+                      
                     ),
                     TextSpan(
                       text: 'DayTask',
-                      style: GoogleFonts.poppins(
-                        textStyle: const TextStyle(
+                      style:  TextStyle(
                           color: Color(0xFFFED36A),
                           fontSize: 61,
                           fontWeight: FontWeight.w600,
                           height: 1.0,
                         ),
                       ),
-                    ),
+                 
                   ],
                 ),
               ),
               const SizeVertical(value: 2),
               CustomButton(
                 name: 'Let’s Start',
-                onTap: () => Navigator.push(
+                onTap: () => Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => SingInScreen(),
+                      builder: (context) => LogInScreen(),
                     )),
               )
             ],

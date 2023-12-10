@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 class CustomTextFormField extends StatefulWidget {
   const CustomTextFormField(
@@ -53,13 +53,13 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
         alignment: Alignment.centerLeft,
         padding: const EdgeInsets.symmetric(vertical: 16),
         child: Text(widget.title ?? "",
-            style: GoogleFonts.roboto(
-                textStyle: widget.titleTextStyle ??
+            style: 
+                 widget.titleTextStyle ??
                     const TextStyle(
                         fontSize: 18,
                         // fontWeight: FontWeight.w600,
                         color: Color(0xff8CAAB9)))),
-      ),
+      
       TextFormField(
         style: widget.textFieldStyle ??
             const TextStyle(color: Colors.white, fontSize: 18),
@@ -106,7 +106,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
           contentPadding:
               const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
           filled: true,
-          fillColor: widget.fillColor ?? const Color(0xff00a859),
+          fillColor: widget.fillColor ?? Color(0xFFFED36A),
           hintText: widget.hintText,
           label: Text(widget.label ?? ""),
           enabledBorder: const OutlineInputBorder(
@@ -116,7 +116,8 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
           ),
           focusedBorder: const OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(10)),
-              borderSide: BorderSide(color: Color(0xFF8CAAB8))),
+              borderSide: BorderSide(color: Color(0xFFFED36A)
+              ),),
           errorBorder: const OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(10)),
               borderSide: BorderSide(color: Colors.red, width: 2)),

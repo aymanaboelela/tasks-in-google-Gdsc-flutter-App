@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class CustomOutlineButton extends StatelessWidget {
   const CustomOutlineButton(
@@ -24,15 +23,15 @@ class CustomOutlineButton extends StatelessWidget {
             Image.asset(
               icon,
               scale: 2,
-              
             ),
-            Text("  $title",
-                style: GoogleFonts.roboto(
-                    textStyle: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 18,
-                  fontWeight: FontWeight.w600,
-                ))),
+            Text(
+              "  $title",
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 18,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
           ],
         ));
   }
