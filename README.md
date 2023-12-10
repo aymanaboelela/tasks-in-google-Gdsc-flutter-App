@@ -1,5 +1,4 @@
-🚀 Elevating our JetHub project with the first three app screens: Splash, Login, and Sign In. They embody sleek simplicity and seamless functionality, setting the stage for a captivating user journey.
-
+🚀 GDSC task deliverable: Developing the initial three app screens - Splash, Login, and Sign In 
 Splash Screen:
 A mesmerizing entry point, setting the tone for an exciting experience.
 
