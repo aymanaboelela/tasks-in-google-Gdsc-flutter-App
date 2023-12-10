@@ -1,16 +1,13 @@
-# mangment_app
+🚀 Elevating our JetHub project with the first three app screens: Splash, Login, and Sign In. They embody sleek simplicity and seamless functionality, setting the stage for a captivating user journey.
 
-A new Flutter project.
+Splash Screen:
+A mesmerizing entry point, setting the tone for an exciting experience.
 
-## Getting Started
+Login Screen:
+Smooth, secure, and user-friendly authentication awaits.
 
-This project is a starting point for a Flutter application.
+Sign In Screen:
+Effortless registration, welcoming users to explore our app's offerings.
 
-A few resources to get you started if this is your first Flutter project:
+Check out the design vibe here for a visual treat! 🎨✨
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
